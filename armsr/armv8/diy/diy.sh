@@ -9,7 +9,7 @@ git clone https://github.com/ophub/luci-app-amlogic --depth=1 clone/amlogic
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall --depth=1 clone/passwall
 git clone https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman --depth=1 feeds/luci/applications/luci-app-podman
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 --single-branch --depth=1 clone/mosdns
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x --single-branch --depth=1 clone/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 26.x --single-branch --depth=1 clone/golang
 git clone https://github.com/sbwml/v2ray-geodata --depth=1 clone/v2ray-geodata
 
 # Adjust packages
