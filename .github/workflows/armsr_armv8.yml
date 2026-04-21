@@ -44,7 +44,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo -E apt-get -qq update > /dev/null
-        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/nantayo/My-Pkg/master/openwrt) > /dev/null
+        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/leselvasier/N1-OpenWrt/master/openwrt) > /dev/null
         sudo -E apt-get -qq autoremove --purge > /dev/null
         sudo -E apt-get -qq clean > /dev/null
         sudo timedatectl set-timezone "$TZ"
@@ -99,7 +99,7 @@ jobs:
         kernel_usage: flippy
         openwrt_kernel: 6.12.y
         openwrt_size: 192/320
-        builder_name: nantayo
+        builder_name: jzq
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@master
@@ -109,7 +109,7 @@ jobs:
         body: |
           首次使用建议全新刷写
           * 基本信息
-          IP: 192.168.2.2
+          IP: 192.168.123.2
           账户: root
           密码: password
 
